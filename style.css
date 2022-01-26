@@ -1,0 +1,421 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    p {
+        font-size: 1.125em;
+        line-height: 32px;
+        color: #6B6B6B;
+    }
+    
+    section {
+        margin-bottom: 160px;
+    }
+    
+    button {
+        cursor: pointer;
+    }
+    
+    .section-heading {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 3.5em;
+        line-height: 72px;
+        align-items: center;
+        text-align: center;
+        color: #FF2D59;
+        margin-bottom: 60px;
+    }
+    
+    .page-width {
+        max-width: 1120px;
+        margin: auto;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    header {
+        height: 120px;
+        width: 100%;
+    }
+    
+    header .logo {
+        padding: 27px 0;
+    }
+    
+    nav {
+        width: 100%;
+        align-self: center;
+    }
+    
+    .navigation {
+        justify-content: flex-end;
+    }
+    
+    .navigation li {
+        margin-left: 40px;
+        list-style: none;
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 170.9%;
+        color: #4F4F4F;
+    }
+    
+    .dropbtn::after {
+        content: url(assets/dropdown-ico.svg);
+        margin-left: 5px;
+    }
+    /* The container <div> - needed to position the dropdown content */
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    /* Links inside the dropdown */
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    /* Change color of dropdown links on hover */
+    
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    /* Show the dropdown menu on hover */
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .rh-name {
+        color: #FC3D3D;
+    }
+    
+    main h1 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 3.5em;
+        line-height: 72px;
+        /* display: flex; */
+        align-items: center;
+        color: #111029;
+    }
+    
+    .text-on-left {
+        width: 50%;
+    }
+    
+    .text-on-left h1,
+    .text-on-left p {
+        margin-bottom: 24px;
+    }
+    
+    .text-on-left h1 {
+        padding-top: 112px;
+    }
+    
+    .text-on-left p {
+        width: 60%;
+    }
+    
+    .btn-arrow {
+        background: #FC3D3D;
+        border-radius: 8px;
+        border: none;
+        padding: 19px 0;
+        width: 200px;
+        color: #fff;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 26px;
+        cursor: pointer;
+    }
+    
+    .btn-arrow .btn-span-arrow::after {
+        content: url(assets/btn-arrow.svg);
+    }
+    
+    #first-sec {
+        background: url(assets/Group\ 1.png) no-repeat;
+        /* background-size: contain; */
+        background-position-y: 149%;
+        background-position-x: 90%;
+        background-size: 1140px;
+    }
+    
+    .curly-line {
+        content: url(assets/Vector.png);
+    }
+    
+    .swiper {
+        width: 600px;
+        height: 300px;
+    }
+    
+    .double-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .half-container {
+        width: 43%;
+    }
+    
+    .department-card {
+        width: 480px;
+        height: 735px;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: -10px 30px 70px rgba(219, 222, 225, 0.4);
+        border-radius: 8px;
+        transition: all .3s ease;
+        margin-bottom: 55px;
+    }
+    
+    .department-card:hover {
+        background: #FC3D3D;
+        box-shadow: -15px 10px 30px rgba(252, 61, 61, 0.25);
+        transition: all .8s ease;
+    }
+    
+    .department-card:hover .department-card__title h3,
+    .department-card:hover .department-card__content p {
+        color: #fff !important;
+    }
+    
+    .department-card:hover .department-card__button button {
+        background: #fff;
+    }
+    
+    .department-card__image {
+        margin: 44px auto;
+    }
+    
+    .department-card__title {
+        text-align: center;
+    }
+    
+    .department-card__title h3 {
+        font-size: 1.25em;
+        color: #111029;
+    }
+    
+    .department-card__content {
+        width: 388px;
+        margin: 16px auto 44px auto;
+        text-align: justify;
+    }
+    
+    .department-card__contentdepartment-card__content p {
+        line-height: 30px;
+        color: #6B6B6B;
+    }
+    
+    .department-card__button {
+        margin: 0 auto;
+    }
+    
+    .depbtn {
+        content: url(assets/depbtn-arrow.svg);
+    }
+    
+    .department-card__button button {
+        border-radius: 50px;
+        border: none;
+        padding: 18px;
+        background: #F3F4F6;
+    }
+    
+    #howitworks-sec {
+        background: url(assets/how_it_works_bg.png) center center no-repeat;
+        background-size: cover;
+    }
+    
+    .square-container {
+        /* width: 100%;
+        height: 712px; */
+        background: #fff;
+        box-shadow: -10px 30px 70px rgba(219, 222, 225, 0.4);
+        border-radius: 20px;
+        padding: 64px;
+    }
+    
+    .fifty-container {
+        width: 50%;
+    }
+    
+    .square-container .btn-arrow {
+        border-radius: 20px;
+        width: 103%;
+        margin-top: 52px;
+    }
+    
+    .little-squared {
+        display: flex;
+        border-radius: 20px;
+        background: #fff;
+        width: 416px;
+        padding: 24px;
+        box-shadow: -15px 12px 25px rgba(219, 222, 225, 0.3);
+        margin-bottom: 52px;
+    }
+    
+    .little-squared__number {
+        margin-right: 15px;
+    }
+    
+    .num {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 88px;
+        line-height: 72px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FC3D3D;
+        position: relative;
+        top: -55px;
+    }
+    
+    .little-squared__content h4 {
+        font-size: 1.25em;
+        line-height: 28px;
+    }
+    
+    .little-squared__content p {
+        font-size: 1.125em;
+        line-height: 30px;
+        color: #6B6B6B;
+    }
+    
+    .little-squared__content {
+        max-width: 300px;
+    }
+    
+    .spacer {
+        height: 160px;
+    }
+    
+    #howitworks-sec {
+        margin-bottom: 0;
+    }
+    
+    #benefits-sec {
+        background: #FEF4F4;
+        margin-bottom: 0;
+    }
+    
+    h2.benefits-heading {
+        font-size: 3.5em;
+        max-width: 440px;
+    }
+    
+    #benefits-sec .double-wrapper {
+        padding-top: 119px;
+        padding-bottom: 35px;
+    }
+    
+    #benefits-sec p {
+        margin-top: 35px;
+        max-width: 395px;
+    }
+    
+    .benefits-list {
+        margin-top: 35px;
+    }
+    
+    .benefits-list li {
+        font-size: 1.125em;
+        line-height: 30px;
+        list-style: none;
+        color: #6B6B6B;
+    }
+    
+    .benefits-list li::before {
+        content: url(assets/Exclude.svg);
+        margin-right: 23px;
+        position: relative;
+        top: 5px;
+    }
+    
+    .benefit-item {
+        background: #fff;
+        border-radius: 20px;
+        padding: 72px 28px;
+        margin-bottom: 40px;
+    }
+    
+    .benefit-item__number h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 3.5em;
+        line-height: 72px;
+        text-align: center;
+        color: #FC3D3D;
+    }
+    
+    .benefit-item__content p {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.125em;
+    }
+    
+    #hc-1 {
+        margin-top: 50px;
+        width: 46% !important;
+    }
+    
+    #hc-2 {
+        width: 46% !important;
+    }
+    
+    .nonfifty-container {
+        width: 47%;
+    }
+    
+    #join {
+        padding-top: 160px;
+    }
+    
+    #send-form-1 {
+        width: 100%;
+        margin-top: 154px;
+    }
+    
+    .form-wrapper {
+        background: #FC3D3D;
+        padding: 60px 65px;
+        border-radius: 10px;
+    }
+    
+    #form-one label,
+    #form-one input,
+    #form-one select {
+        width: 100%;
+    }

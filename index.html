@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <title>Remote Helpers</title>
+</head>
+
+<body>
+    <header>
+        <div class="page-width flex">
+            <img class="logo" src="assets/Logo.png" alt="Remote Helpers logo">
+            <nav>
+                <ul class="navigation flex">
+                    <li><a href="#">Benefits</a></li>
+                    <li class="dropdown"><a class="dropbtn" href="#">Departments</a>
+                        <div class="dropdown-content">
+                            <a href="#">Design</a>
+                            <a href="#">Development</a>
+                            <a href="#">Marketing</a>
+                            <a href="#">Sales</a>
+                            <a href="#">Media</a>
+                            <a href="#">Virtual assistance</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Join us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="first-sec">
+            <div class="page-width">
+                <div class="text-on-left">
+                    <h1>Start working remotely with <span class="rh-name">Remote Helpers</span> today!</h1>
+                    <p>Join our outstaffing team to participate in exciting projects worldwide and achieve professional development opportunities! </p>
+                    <button class="btn-arrow">Get Started<span class="btn-span-arrow"> </span></button>
+                </div>
+            </div>
+            <!-- <span class="curly-line"></span> -->
+        </section>
+
+        <section id="deparments-sec">
+            <div class="page-width">
+                <h2 class="section-heading">Our Departments</h2>
+
+                <div class="double-wrapper">
+                    <div class="half-container">
+                        <div class="department-card">
+                            <div class="department-card__image">
+                                <img src="assets/card_design.png" alt="">
+                            </div>
+                            <div class="department-card__title">
+                                <h3>Design</h3>
+                            </div>
+                            <div class="department-card__content">
+                                <p>We need graphic and UI/UX designers, illustrators who can create or update an existing website's design. What do we expect from you? We want you to create user interface elements; develop the layouts and prototypes; create
+                                    the brand books and logos; landing page development.
+                                </p>
+                            </div>
+                            <div class="department-card__button">
+                                <button onclick="location.href='https://rh-s.com/design/'"><span class="depbtn"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="half-container">
+                        <div class="department-card">
+                            <div class="department-card__image">
+                                <img src="assets/card_dev.png" alt="">
+                            </div>
+                            <div class="department-card__title">
+                                <h3>Development</h3>
+                            </div>
+                            <div class="department-card__content">
+                                <p> Looking for a Frontend, Backend, Full stack developer, or QA tester vacancy? In our company, you will be engaged in the full support of the software development life cycle: analysis, design, development, testing, and implementation
+                                    of clients and server-side of the website.</p>
+                            </div>
+                            <div class="department-card__button">
+                                <button onclick="location.href='https://rh-s.com/development/'"><span class="depbtn"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="half-container">
+                        <div class="department-card">
+                            <div class="department-card__image">
+                                <img src="assets/card_marketing.png" alt="">
+                            </div>
+                            <div class="department-card__title">
+                                <h3>Marketing</h3>
+                            </div>
+                            <div class="department-card__content">
+                                <p>Our company is waiting for specialists in SEO, SMM, PPC, Copywrite, Media buying, Email marketing, and Influence marketing fields. We require developing a content strategy, compiling reports on the performance of advertising
+                                    campaigns, conducting research and analyzing trends, creating, editing, and updating content on the site or social networks.</p>
+                            </div>
+                            <div class="department-card__button">
+                                <button onclick="location.href='https://rh-s.com/marketing/'"><span class="depbtn"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="half-container">
+                        <div class="department-card">
+                            <div class="department-card__image">
+                                <img src="assets/card_sales.png" alt="">
+                            </div>
+                            <div class="department-card__title">
+                                <h3>Sales</h3>
+                            </div>
+                            <div class="department-card__content">
+                                <p>Become sales managers and lead generators in Remote Helpers. Your tasks will be to provide strategy control, goal setting and sales performance tracking, the lead search, initial contact with the client; preparation of
+                                    trade offers; managing negotiations/correspondence; re-attracting customers to cooperation.</p>
+                            </div>
+                            <div class="department-card__button">
+                                <button onclick="location.href='https://rh-s.com/sales/'"><span class="depbtn"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="half-container">
+                        <div class="department-card">
+                            <div class="department-card__image">
+                                <img src="assets/card_media.png" alt="">
+                            </div>
+                            <div class="department-card__title">
+                                <h3>Media</h3>
+                            </div>
+                            <div class="department-card__content">
+                                <p>You are good at promoting the brand? The requirements of media buyer and affiliate manager in our company will be creating marketing campaigns, searching for profitable cooperation for the projects, looking for advertising
+                                    space, cost and ROI monitoring, and optimization of plans and budgets
+                                </p>
+                            </div>
+                            <div class="department-card__button">
+                                <button onclick="location.href='https://rh-s.com/media/'"><span class="depbtn"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="half-container">
+                        <div class="department-card">
+                            <div class="department-card__image">
+                                <img src="assets/card_virtual-assistance.png" alt="">
+                            </div>
+                            <div class="department-card__title">
+                                <h3>Virtual assistance</h3>
+                            </div>
+                            <div class="department-card__content">
+                                <p>Have experience in virtual assistance? Start working as a remote personal assistant, customer support, and accountant in our company. You will search and communicate with customers via email or chat, update the database
+                                    with information, audit, make a financial analysis of results and statements, control the execution of tasks and documentation processing.</p>
+                            </div>
+                            <div class="department-card__button">
+                                <button onclick="location.href='https://rh-s.com/virtual-assistance/'"><span class="depbtn"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="howitworks-sec">
+            <div class="page-width">
+                <h2 class="section-heading">How it works</h2>
+
+                <div class="square-container">
+                    <div class="double-wrapper">
+                        <div class="fifty-container">
+                            <div class="little-squared">
+                                <div class="little-squared__number">
+                                    <h2 class="num">1</h2>
+                                </div>
+                                <div class="little-squared__content">
+                                    <h4>Fill out the contact form</h4>
+                                    <p>Leave the contact information, and our managers will respond to you immediately</p>
+                                </div>
+                            </div>
+
+                            <div class="little-squared">
+                                <div class="little-squared__number">
+                                    <h2 class="num">2</h2>
+                                </div>
+                                <div class="little-squared__content">
+                                    <h4>Pass the online interview</h4>
+                                    <p>Send us a short video and get your job </p>
+                                </div>
+                            </div>
+
+                            <div class="little-squared">
+                                <div class="little-squared__number">
+                                    <h2 class="num">3</h2>
+                                </div>
+                                <div class="little-squared__content">
+                                    <h4>Become a part of the team</h4>
+                                    <p>After all the steps, we will discuss the details, and soon you'll get your position</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fifty-container">
+                            <img src="assets/Image.png" alt="">
+                            <button class="btn-arrow">Get Started<span class="btn-span-arrow"> </span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spacer"></div>
+
+            </div>
+        </section>
+
+        <section id="benefits-sec">
+            <div class="page-width">
+                <div class="double-wrapper">
+
+                    <div class="nonfifty-container">
+                        <div class="double-wrapper">
+                            <div class="half-container" id="hc-1">
+
+                                <div class="benefit-item">
+                                    <div class="benefit-item__number">
+                                        <h2>500+</h2>
+                                    </div>
+                                    <div class="benefit-item__content">
+                                        <p>We have more than customers</p>
+                                    </div>
+                                </div>
+
+                                <div class="benefit-item">
+                                    <div class="benefit-item__number">
+                                        <h2>360</h2>
+                                    </div>
+                                    <div class="benefit-item__content">
+                                        <p>Projects in process right now</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="half-container" id="hc-2">
+                                <div class="benefit-item">
+                                    <div class="benefit-item__number">
+                                        <h2>100</h2>
+                                    </div>
+                                    <div class="benefit-item__content">
+                                        <p>Free Vacancies</p>
+                                    </div>
+                                </div>
+
+                                <div class="benefit-item">
+                                    <div class="benefit-item__number">
+                                        <h2>200</h2>
+                                    </div>
+                                    <div class="benefit-item__content">
+                                        <p>Work in our company with us</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nonfifty-container">
+                        <h2 class="benefits-heading">Benefits of cooperation with us</h2>
+                        <p>We offer <b>remote jobs</b> on a full-time basis for people from different countries. Cooperating with us, you’ll get a stable job, a friendly team, permanent learning, and the possibility to <b>work on international projects!</b>
+                        </p>
+                        <ul class="benefits-list">
+                            <li>Remote work</li>
+                            <li>Career development</li>
+                            <li>Improving your English</li>
+                            <li>Timely salary</li>
+                            <li>Work on international projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="join">
+            <div class="page-width">
+                <h2 class="section-heading">Fill out the form to join us!</h2>
+                <div class="double-wrapper">
+
+                    <div class="fifty-container">
+                        <div class="form-wrapper">
+                            <p>
+                                Fill out the form and our agent will contact you</p>
+                            <form id="form-one">
+                                <div>
+                                    <label for="name">Name and last name*</label>
+                                    <input type="text" id="name" name="name">
+                                </div>
+                                <div>
+                                    <label for="email">E-mail*</label>
+                                    <input type="text" id="email" name="email">
+                                </div>
+                                <div>
+                                    <label for="phone">Phone number</label>
+                                    <input type="text" id="phone" name="phone">
+                                </div>
+                                <div>
+                                    <label for="department-selector">Choose where you’d like to work:</label>
+                                    <select id="department-selector" name="department-selector">
+                                <option>Design</option>
+                                <option>Development</option>
+                                <option>Marketing</option>
+                                <option>Sales</option>
+                                <option>Media</option>
+                                <option>Virtual Assistance</option>
+                              </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="fifty-container">
+                        <img src="/assets/undraw_fill_form_re_cwyf 1.png" alt="">
+                        <button id="send-form-1" class="btn-arrow">Send an application</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+</html>
