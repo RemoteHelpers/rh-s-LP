@@ -503,6 +503,7 @@
         line-height: 32px;
         text-align: center;
         color: #fff;
+        margin-bottom: 32px;
     }
     
     #form-one label {
@@ -538,7 +539,7 @@
     }
     
     .form-deco {
-        margin-top: 31px;
+        margin-top: 110px;
     }
     
     #review-sec {
@@ -732,12 +733,14 @@
     .twitter {
         background: url(assets/twitter.png);
     }
-    /* sssssssssssssssssssssssssssssssss */
+    
+    .department-mobile {
+        display: none;
+    }
+    /* Contact form fve */
     
     .contact_form {
         width: 100%;
-        margin-top: 30px;
-        padding-left: 30px;
     }
     
     .custom-select {
@@ -753,7 +756,7 @@
     
     .option-display {
         border: 2px solid transparent;
-        border-radius: 30px;
+        border-radius: 20px;
         padding: 15px 30px;
         width: 100%;
         z-index: 20;
@@ -762,32 +765,33 @@
         box-shadow: 2px 5px 15px #0000000f;
     }
     
-    .opd-item,
-    .opd-close {
+    .option-display:after {
         position: absolute;
-        content: ">";
+        content: url(/assets/down-tr.svg);
         color: #000;
         top: 15px;
         right: 15px;
-        transform: rotate( 90deg);
     }
     
     .option-display:hover {
         cursor: pointer;
-        border: 2px solid #F13F00;
     }
     
     .contact_form .contact_form__option.active,
     .contact_form .contact_form__option:hover {
-        background: #F13F00;
+        background: #FC3D3D;
         color: #fff;
         border-radius: inherit;
     }
     
     .active {
         max-height: 92px;
-        background-color: #f13f00;
+        background-color: #FC3D3D;
         transition: .8s;
+    }
+    
+    .active-display {
+        box-shadow: 2px 5px 15px transparent !important;
     }
     
     .contact_form__option {
@@ -795,12 +799,8 @@
         padding: 6px 10px;
         outline-style: none;
         transition: .3s;
-        border-radius: 10px;
+        border-radius: 0px !important;
         cursor: pointer;
-    }
-    
-    #form-one select {
-        width: 104%;
     }
     
     .option-wrapper.display {
@@ -816,10 +816,26 @@
         left: 0;
         box-shadow: 2px 5px 15px #0000000f;
         border-radius: 10px;
-        width: 100%;
+        width: 118%;
         display: none;
     }
     
-    .department-mobile {
-        display: none;
+    input {
+        width: 92%;
+        border-radius: 20px;
+        padding: 15px 30px;
+        z-index: 20;
+        background-color: #fff;
+        box-shadow: 2px 5px 15px #0000000f;
+        border: none;
+        margin-bottom: 32px;
+    }
+    
+    label {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        color: #FDFDFD;
+        margin-top: 32px;
     }

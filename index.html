@@ -66,7 +66,7 @@
                 <div class="text-on-left">
                     <h1>Start working remotely with <span class="rh-name">Remote Helpers</span> today!</h1>
                     <p>Join our outstaffing team to participate in exciting projects worldwide and achieve professional development opportunities! </p>
-                    <button class="btn-arrow">Get Started<span class="btn-span-arrow"> </span></button>
+                    <button onclick="window.location.href='/#join-link'" class="btn-arrow">Get Started<span class="btn-span-arrow"> </span></button>
                 </div>
             </div>
             <!-- <span class="curly-line"></span> -->
@@ -368,7 +368,7 @@
 
                         <div class="fifty-container dw-adaptive__fc2">
                             <img src="assets/Image.png" alt="">
-                            <button class="btn-arrow">Get Started<span class="btn-span-arrow"> </span></button>
+                            <button onclick="window.location.href='/#join-link'" class="btn-arrow">Get Started<span class="btn-span-arrow"> </span></button>
                         </div>
                     </div>
                 </div>
@@ -446,7 +446,7 @@
         </section>
 
         <section id="join">
-            <div class="page-width">
+            <div class="page-width contactform-section">
                 <h2 id="join-link" class="section-heading">Fill out the form to join us!</h2>
                 <div class="double-wrapper adaptive-join-dw">
 
@@ -454,7 +454,8 @@
                         <div class="form-wrapper">
                             <p>
                                 Fill out the form and our agent will contact you</p>
-                            <form id="form-one">
+
+                            <!-- <form id="form-one">
 
                                 <div>
                                     <div class="close-select">X</div>
@@ -480,13 +481,78 @@
                                         <option>Virtual Assistance</option>
                                     </select>
                                 </div>
-                            </form>
+                            </form> -->
+
+                            <div class="contactform-section">
+                                <div class="cform-wrapper">
+
+                                    <!-- <h2 class="section-header section-title form-title--mob">Contact form.</h2> -->
+
+
+                                    <!-- <h3 class="contactform-description description form-text--mob">
+                                        Fill out the form and our agent will contact you</h3> -->
+
+                                    <div class="contact_form">
+
+                                        <input type="text" style="display:none;" class="contact_form__input--select" required="" id="contactForm-type" name="contact[Service type]" value="advertisments">
+
+                                        <label for="name">Name and last name*</label>
+                                        <input type="text" required="" class="contact_form__input--name contact_form__input" placeholder="Your full name" id="contactForm-name" name="contact[Name]" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" oninvalid="setCustomValidity('Enter letters')"
+                                            oninput="setCustomValidity('')">
+
+                                        <label for="email">E-mail*</label>
+                                        <input type="email" required="" class="contact_form__input--email contact_form__input" placeholder="E-mail" id="contactForm-email" name="contact[email]" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" oninvalid="setCustomValidity('xxx@xxx.xxx')"
+                                            oninput="setCustomValidity('')">
+
+                                        <label for="phone">Phone number</label>
+                                        <input type="tel" oninvalid="setCustomValidity('Invalid phone number format')" oninput="setCustomValidity('')" class="contact_form__input--phone contact_form__input" placeholder="Phone number" pattern="(\+)?[0-9]{0,3}[0-9]{3}[0-9]{3}[0-9]{4}" required=""
+                                            id="contactForm-phone" name="contact[Phone Number]">
+
+                                        <label>Choose where you’d like to work:</label>
+                                        <div class="custom-select">
+
+                                            <div class="option-display">Design</div>
+                                            <div class="option-wrapper">
+
+
+                                                <div value="design" class="contact_form__option active">Design</div>
+
+
+
+                                                <div value="development" class="contact_form__option">Development</div>
+
+
+
+                                                <div value="marketing" class="contact_form__option">Marketing</div>
+
+
+
+                                                <div value="sales" class="contact_form__option">Sales</div>
+
+
+
+                                                <div value="media" class="contact_form__option">Media</div>
+
+
+
+                                                <div value="virtual_assistance" class="contact_form__option">Virtual Assistance</div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="button-wrapper">
+                                        <input type="submit" class="button button--basic" value="Send">
+                                    </div> -->
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
                     <div class="nonfifty-container adaptive-join-nc2">
                         <img class="form-deco" src="/assets/undraw_fill_form_re_cwyf 1.png" alt="">
-                        <button id="send-form-1" class="btn-arrow">Send an application</button>
+                        <input type="submit" value="Send an application" id="send-form-1" class="btn-arrow"></button>
                     </div>
                 </div>
 
@@ -673,7 +739,7 @@
                     <p>We offer remote jobs on a full-time basis for people from different countries. Cooperating with us, you’ll get a stable job, a friendly team, permanent learning, and the possibility to work on international projects!</p>
                 </div>
                 <div class="footer-top__right">
-                    <img src="assets/footer-logo.png" alt="">
+                    <a href="#"><img src="assets/footer-logo.png" alt=""></a>
                 </div>
             </div>
             <div class="footer-bottom">

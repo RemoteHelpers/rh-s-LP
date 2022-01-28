@@ -287,7 +287,11 @@
                     margin: 80px auto;
                     padding: 10% 5%;
                 }
-                .footer-top__right img {
+                .footer-top__right a {
+                    text-align-last: center;
+                }
+                .footer-top__right a img,
+                .footer-top__right a {
                     width: 80%;
                 }
                 .footer-menu {
@@ -500,5 +504,17 @@
                     margin: auto;
                     margin-top: 35px;
                     padding: 0;
+                }
+                input {
+                    width: 85%;
+                }
+                .custom-select {
+                    width: 83%;
+                }
+            }
+            
+            @media screen and (max-width: 500px) {
+                .double-wrapper.benefits-dw-adaptive .benefits-dw-adaptive__nc1 {
+                    display: none;
                 }
             }
