@@ -1,0 +1,504 @@
+            @media screen and (min-width: 1600px) {
+                #first-sec {
+                    background-position-x: 70%;
+                }
+            }
+            
+            @media screen and (max-width: 1200px) {
+                #first-sec {
+                    background-size: 80%;
+                    background-position-y: bottom;
+                }
+                .page-width {
+                    max-width: 90%;
+                    margin: auto;
+                    padding: 0 2%;
+                }
+                #first-sec {
+                    background-size: 80%;
+                    background-position-y: center;
+                }
+                .department-card {
+                    width: 100%;
+                    height: 785px;
+                    display: flex;
+                    flex-direction: column;
+                    background: #fff;
+                    box-shadow: -10px 30px 70px rgb(219 222 225 / 40%);
+                    border-radius: 8px;
+                    transition: all .3s ease;
+                    margin-bottom: 55px;
+                    padding: 0 10px;
+                }
+                main h1 {
+                    font-size: 42px;
+                    line-height: 56px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #6B6B6B;
+                }
+                .section-heading {
+                    font-size: 42px;
+                    line-height: 56px;
+                }
+                .dw-adaptive__fc2 {
+                    align-self: center;
+                }
+            }
+            
+            @media screen and (max-width: 1100px) {
+                .text-on-left h1 {
+                    padding-top: 35px;
+                }
+                .review-card__description p {
+                    font-size: 16px;
+                }
+            }
+            
+            @media screen and (max-width: 1024px) {
+                .review-cards-mobile {
+                    display: block;
+                }
+                section {
+                    margin-bottom: 80px;
+                }
+                #join {
+                    padding-top: 80px;
+                }
+                .btn-arrow {
+                    border-radius: 8px;
+                    padding: 10px 0;
+                    width: 165px;
+                }
+                main h1 {
+                    font-size: 36px;
+                    line-height: 42px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                .section-heading {
+                    font-size: 36px;
+                    line-height: 42px;
+                }
+                .section-subheading {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .desktop {
+                    display: none;
+                }
+                .department-mobile {
+                    display: block;
+                }
+                .department-mobile .department-card {
+                    width: 70%;
+                    height: 400px;
+                    margin: auto;
+                    margin-bottom: 90px;
+                }
+                .department-mobile .department-card__image {
+                    margin: 30px auto;
+                    height: 100px;
+                }
+                .department-mobile .department-card__image img {
+                    width: 100px;
+                }
+                .department-mobile .department-card__content {
+                    width: 90%;
+                    height: 20%;
+                }
+                .swiper-slide a {
+                    text-decoration: none;
+                }
+                .swiper-pagination-bullet {
+                    width: 15px !important;
+                    height: 15px !important;
+                }
+                .department-card__content p {
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #6B6B6B;
+                }
+                .swiper-pagination-bullet-active {
+                    background: #ff2d59 !important;
+                }
+                .swiper-button-next,
+                .swiper-button-prev {
+                    color: #ff2d59 !important;
+                }
+                .dw-adaptive {
+                    flex-direction: column !important;
+                }
+                .dw-adaptive__fc1 {
+                    align-self: center;
+                    width: 100%;
+                }
+                .dw-adaptive__fc2 img {
+                    display: none;
+                }
+                .little-squared {
+                    width: 55%;
+                    margin: auto;
+                    margin-bottom: 55px;
+                }
+                .benefits-dw-adaptive {
+                    flex-direction: column-reverse;
+                }
+                .benefits-dw-adaptive__nc1,
+                .benefits-dw-adaptive__nc2 {
+                    width: 100%;
+                }
+                h2.benefits-heading {
+                    font-size: 36px;
+                    max-width: 440px;
+                    margin: auto;
+                    text-align: center;
+                }
+                #benefits-sec p {
+                    margin: auto;
+                    max-width: 70%;
+                    margin-top: 35px;
+                }
+                .benefits-list {
+                    width: auto;
+                    margin: auto;
+                    margin-top: 35px;
+                    padding: 0 25%;
+                }
+                .benefit-item {
+                    background: #fff;
+                    border-radius: 20px;
+                    padding: 10px;
+                    margin-bottom: 40px;
+                    box-shadow: 0px 25px 100px rgb(252 61 61 / 15%);
+                }
+                .benefit-item__number h2 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .benefit-item__content p {
+                    font-size: 14px;
+                }
+                #hc-1,
+                #hc-2 {
+                    width: 25% !important;
+                }
+                #hc-1 {
+                    margin-right: 15px;
+                }
+                #hc-2 {
+                    margin-left: 15px;
+                }
+                .benefits-dw-adaptive__nc1 .double-wrapper {
+                    justify-content: center;
+                }
+                #benefits-sec .double-wrapper {
+                    padding-top: 35px;
+                    padding-bottom: 35px;
+                }
+                .adaptive-join-nc2 img {
+                    display: none;
+                }
+                .adaptive-join-dw {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .adaptive-join-nc1,
+                .adaptive-join-nc2 {
+                    width: 75%;
+                    margin: auto;
+                }
+                #send-form-1 {
+                    width: 100%;
+                    margin-top: 34px;
+                }
+                .rc-mobile {
+                    width: 50%;
+                    margin: 80px auto;
+                    padding: 10% 5%;
+                    box-shadow: 4px 8px 20px rgb(252 61 61 / 20%);
+                }
+                .rc-mobile .review-card__description {
+                    min-height: 176px !important;
+                    height: 100%;
+                    max-height: 300px;
+                }
+                .rc-mobile .review-card__rating {
+                    padding-top: 25px;
+                    padding-bottom: 5px;
+                    text-align: center;
+                }
+                .footer-top {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+                .footer-top__left {
+                    width: 90%;
+                    text-align: center;
+                }
+                .footer-bottom {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+                .footer-copiright {
+                    margin: 20px 0px;
+                }
+                .footer-menu {
+                    margin: 40px 0px 20px 0px;
+                }
+                .footer-social {
+                    width: 50%;
+                }
+                .footer-top__right {
+                    width: auto;
+                    display: flex;
+                    justify-content: center;
+                }
+                .footer-top p {
+                    margin-top: 30px;
+                }
+            }
+            
+            @media screen and (max-width: 992px) {
+                .little-squared {
+                    width: 75%;
+                    margin: auto;
+                    margin-bottom: 55px;
+                }
+                .little-squared__number {
+                    margin-right: 50px;
+                }
+                .little-squared__content {
+                    max-width: 65%;
+                }
+                .adaptive-join-nc1,
+                .adaptive-join-nc2 {
+                    width: 85%;
+                    margin: auto;
+                }
+                .rc-mobile {
+                    width: 75%;
+                    margin: 80px auto;
+                    padding: 10% 5%;
+                }
+                .footer-top__right img {
+                    width: 80%;
+                }
+                .footer-menu {
+                    width: 80%;
+                }
+            }
+            
+            @media screen and (max-width: 767px) {
+                .full-nav {
+                    display: none;
+                }
+                .mobile-menu {
+                    display: block;
+                    width: 100%;
+                    text-align: right;
+                    padding-top: 44px;
+                }
+                .text-on-left {
+                    width: 100%;
+                    text-align: center;
+                }
+                .text-on-left p {
+                    width: 60%;
+                    margin: auto;
+                    margin-bottom: 50px;
+                }
+                #first-sec {
+                    background-size: 50%;
+                    background-position-y: -5%;
+                    background-position-x: 32%;
+                }
+                .text-on-left {
+                    width: 100%;
+                    text-align: center;
+                    padding-top: 170px;
+                }
+                .mobile-menu-btn {
+                    float: right;
+                }
+                .menu-btn {
+                    float: right;
+                }
+                .mobile-menu-container {
+                    display: none;
+                    position: absolute;
+                    width: 95%;
+                    left: 0;
+                    top: 0;
+                    padding-left: 5%;
+                    z-index: 999;
+                    height: 1px;
+                    transition: all .3s ease;
+                }
+                #close {
+                    margin-right: 37px;
+                    margin-top: 20px;
+                }
+                .mobile-menu-wrapper li {
+                    text-decoration: none;
+                    list-style: none;
+                }
+                .mobile-menu-list {
+                    display: none;
+                }
+                .mobile-menu-list a {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 140%;
+                    text-align: center;
+                    color: #191919;
+                    text-decoration: none;
+                }
+                .mobile-menu-wrapper li {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 200%;
+                    color: #6B6B6B;
+                }
+                .mobile-menu-wrapper a {
+                    color: #6B6B6B;
+                    text-decoration: none;
+                }
+                .menu-item-has-children .sub-menu {
+                    padding: 0;
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    background: #fff;
+                    z-index: 100;
+                    list-style: none;
+                    margin-left: -25px;
+                }
+                .mobile-menu-item {
+                    padding: 16px 0;
+                }
+                .mobile-menu-wrapper {
+                    height: 0px;
+                    display: none;
+                    transition: all .3s ease;
+                }
+                .mobile-menu-container__visible {
+                    display: block !important;
+                    height: auto;
+                    background: white;
+                    padding-top: 28px;
+                    transition: all .3s ease;
+                    border-bottom: 1px solid #6B6B6B;
+                }
+                .show-menu {
+                    display: block;
+                    height: 100% !important;
+                    transition: all .3s ease;
+                }
+                ul.sub-menu {
+                    padding-left: 25px;
+                }
+                .blur {
+                    filter: blur(0.6em);
+                }
+                .swiper-button-prev,
+                .swiper-button-next {
+                    display: none !important;
+                }
+            }
+            
+            @media screen and (max-width: 720px) {
+                .department-mobile .department-card {
+                    width: 80%;
+                    box-shadow: 0px 30px 20px rgb(219 222 225 / 40%);
+                }
+                .little-squared__content {
+                    max-width: 100%;
+                }
+                .little-squared__number {
+                    margin-right: 15px;
+                }
+                .square-container {
+                    padding: 10px;
+                }
+                .square-container .btn-arrow {
+                    border-radius: 20px;
+                    width: 100%;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .footer-menu .navigation {
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                .navigation li {
+                    margin-left: 0px;
+                    margin-bottom: 20px;
+                }
+                .adaptive-join-nc1,
+                .adaptive-join-nc2 {
+                    width: 100%;
+                    margin: auto;
+                }
+                .rc-mobile {
+                    width: 80%;
+                }
+            }
+            
+            @media screen and (max-width: 640px) {
+                main h1 {
+                    font-size: 28px;
+                    line-height: 32px;
+                }
+                .section-heading {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .department-card__content p {
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #6B6B6B;
+                }
+                .num {
+                    font-size: 56px;
+                    line-height: 62px;
+                }
+                h2.benefits-heading {
+                    font-size: 22px;
+                }
+                .review-card__description p {
+                    font-size: 12px;
+                    line-height: 21px;
+                }
+                #first-sec {
+                    background-position-y: 0%;
+                }
+                .footer-social {
+                    width: 80%;
+                }
+                .form-wrapper {
+                    background: #FC3D3D;
+                    padding: 20px 35px 40px 22px;
+                    border-radius: 10px;
+                }
+                #benefits-sec p {
+                    margin: auto;
+                    max-width: 90%;
+                }
+                .benefits-list {
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 35px;
+                    padding: 0;
+                }
+            }

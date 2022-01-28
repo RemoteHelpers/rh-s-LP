@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -17,27 +18,49 @@
     <header>
         <div class="page-width flex">
             <img class="logo" src="assets/Logo.png" alt="Remote Helpers logo">
-            <nav>
+            <nav class="full-nav">
                 <ul class="navigation flex">
-                    <li><a href="#">Benefits</a></li>
-                    <li class="dropdown"><a class="dropbtn" href="#">Departments</a>
+                    <li><a href="#benefits-link">Benefits</a></li>
+                    <li class="dropdown"><a class="dropbtn" href="#deparments-sec">Departments</a>
                         <div class="dropdown-content">
-                            <a href="#">Design</a>
-                            <a href="#">Development</a>
-                            <a href="#">Marketing</a>
-                            <a href="#">Sales</a>
-                            <a href="#">Media</a>
-                            <a href="#">Virtual assistance</a>
+                            <a href="#dc-design">Design</a>
+                            <a href="#dc-dev">Development</a>
+                            <a href="#dc-marketing">Marketing</a>
+                            <a href="#dc-sales">Sales</a>
+                            <a href="#dc-media">Media</a>
+                            <a href="#dc-va">Virtual assistance</a>
                         </div>
                     </li>
-                    <li><a href="#">Join us</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#join-link">Join us</a></li>
+                    <!-- <li><a href="#">Contact us</a></li> -->
                 </ul>
             </nav>
+            <div class="mobile-menu">
+                <img src="assets/mobile-menu.svg" alt="" class="menu-btn">
+            </div>
+            <div class="mobile-menu-container">
+                <ul class="mobile-menu-wrapper">
+                    <img class="menu-btn" id="close" src="assets/mobile-menu-close.svg" alt="">
+                    <li class="menu-item"><a href="#benefits-link">Benefits</a></li>
+                    <li class="menu-item"><a href="#deparments-sec">Departments
+                        <!-- <ul class="sub-menu">
+                            <li><a href="#deparments-sec">Design</a></li>
+                    <li><a href="#deparments-sec">Development</a></li>
+                    <li><a href="#deparments-sec">Marketing</a></li>
+                    <li><a href="#deparments-sec">Sales</a></li>
+                    <li><a href="#deparments-sec">Media</a></li>
+                    <li><a href="#deparments-sec">Virtual assistance</a></li>
+                </ul> -->
+                </li>
+                </a>
+                <li class="menu-item"><a href="#join-link">Join us</a></li>
+                <!-- <li class="menu-item"><a href="#">Contact us</a></li> -->
+                </ul>
+            </div>
         </div>
     </header>
 
-    <main>
+    <main class="header-section">
         <section id="first-sec">
             <div class="page-width">
                 <div class="text-on-left">
@@ -53,8 +76,8 @@
             <div class="page-width">
                 <h2 class="section-heading">Our Departments</h2>
 
-                <div class="double-wrapper">
-                    <div class="half-container">
+                <div class="double-wrapper desktop">
+                    <div id="dc-design" class="half-container">
                         <div class="department-card">
                             <div class="department-card__image">
                                 <img src="assets/card_design.png" alt="">
@@ -68,12 +91,14 @@
                                 </p>
                             </div>
                             <div class="department-card__button">
-                                <button onclick="location.href='https://rh-s.com/design/'"><span class="depbtn"></span></button>
+                                <a href="https://rh-s.com/design/">
+                                    <div class="dep-card-btn"><span class="depbtn"></span></div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="half-container">
-                        <div class="department-card">
+                        <div id="dc-dev" class="department-card">
                             <div class="department-card__image">
                                 <img src="assets/card_dev.png" alt="">
                             </div>
@@ -85,13 +110,15 @@
                                     of clients and server-side of the website.</p>
                             </div>
                             <div class="department-card__button">
-                                <button onclick="location.href='https://rh-s.com/development/'"><span class="depbtn"></span></button>
+                                <a href="https://rh-s.com/development/">
+                                    <div class="dep-card-btn"><span class="depbtn"></span></div>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="half-container">
-                        <div class="department-card">
+                        <div id="dc-marketing" class="department-card">
                             <div class="department-card__image">
                                 <img src="assets/card_marketing.png" alt="">
                             </div>
@@ -103,13 +130,15 @@
                                     campaigns, conducting research and analyzing trends, creating, editing, and updating content on the site or social networks.</p>
                             </div>
                             <div class="department-card__button">
-                                <button onclick="location.href='https://rh-s.com/marketing/'"><span class="depbtn"></span></button>
+                                <a href="https://rh-s.com/marketing">
+                                    <div class="dep-card-btn"><span class="depbtn"></span></div>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="half-container">
-                        <div class="department-card">
+                        <div id="dc-sales" class="department-card">
                             <div class="department-card__image">
                                 <img src="assets/card_sales.png" alt="">
                             </div>
@@ -118,16 +147,19 @@
                             </div>
                             <div class="department-card__content">
                                 <p>Become sales managers and lead generators in Remote Helpers. Your tasks will be to provide strategy control, goal setting and sales performance tracking, the lead search, initial contact with the client; preparation of
-                                    trade offers; managing negotiations/correspondence; re-attracting customers to cooperation.</p>
+                                    trade offers; managing negotiations/correspondence; re-attracting customers to cooperation.
+                                </p>
                             </div>
                             <div class="department-card__button">
-                                <button onclick="location.href='https://rh-s.com/sales/'"><span class="depbtn"></span></button>
+                                <a href="https://rh-s.com/sales/">
+                                    <div class="dep-card-btn"><span class="depbtn"></span></div>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="half-container">
-                        <div class="department-card">
+                        <div id="dc-media" class="department-card">
                             <div class="department-card__image">
                                 <img src="assets/card_media.png" alt="">
                             </div>
@@ -140,13 +172,15 @@
                                 </p>
                             </div>
                             <div class="department-card__button">
-                                <button onclick="location.href='https://rh-s.com/media/'"><span class="depbtn"></span></button>
+                                <a href="https://rh-s.com/media/">
+                                    <div class="dep-card-btn"><span class="depbtn"></span></div>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="half-container">
-                        <div class="department-card">
+                        <div id="dc-va" class="department-card">
                             <div class="department-card__image">
                                 <img src="assets/card_virtual-assistance.png" alt="">
                             </div>
@@ -158,11 +192,135 @@
                                     with information, audit, make a financial analysis of results and statements, control the execution of tasks and documentation processing.</p>
                             </div>
                             <div class="department-card__button">
-                                <button onclick="location.href='https://rh-s.com/virtual-assistance/'"><span class="depbtn"></span></button>
+                                <a href="https://rh-s.com/virtual-assistance/">
+                                    <div class="dep-card-btn"><span class="depbtn"></span></div>
+                                </a>
                             </div>
                         </div>
                     </div>
 
+                </div>
+                <div class="department-mobile">
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-1">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="https://rh-s.com/design/">
+                                    <div class="department-card">
+                                        <div class="department-card__image">
+                                            <img src="assets/card_design.png" alt="">
+                                        </div>
+                                        <div class="department-card__title">
+                                            <h3>Design</h3>
+                                        </div>
+                                        <div class="department-card__content">
+                                            <p>We need graphic and UI/UX designers, illustrators who can create or update an existing website's design. What do we expect from you? We want you to create user interface elements; develop the layouts and prototypes;
+                                                create the brand books and logos; landing page development.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="https://rh-s.com/development/">
+                                    <div class="department-card">
+                                        <div class="department-card__image">
+                                            <img src="assets/card_dev.png" alt="">
+                                        </div>
+                                        <div class="department-card__title">
+                                            <h3>Development</h3>
+                                        </div>
+                                        <div class="department-card__content">
+                                            <p> Looking for a Frontend, Backend, Full stack developer, or QA tester vacancy? In our company, you will be engaged in the full support of the software development life cycle: analysis, design, development, testing,
+                                                and implementation of clients and server-side of the website.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="https://rh-s.com/marketing">
+                                    <div class="department-card">
+                                        <div class="department-card__image">
+                                            <img src="assets/card_marketing.png" alt="">
+                                        </div>
+                                        <div class="department-card__title">
+                                            <h3>Marketing</h3>
+                                        </div>
+                                        <div class="department-card__content">
+                                            <p>Our company is waiting for specialists in SEO, SMM, PPC, Copywrite, Media buying, Email marketing, and Influence marketing fields. We require developing a content strategy, compiling reports on the performance
+                                                of advertising campaigns, conducting research and analyzing trends, creating, editing, and updating content on the site or social networks.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="https://rh-s.com/sales/">
+                                    <div class="department-card">
+                                        <div class="department-card__image">
+                                            <img src="assets/card_sales.png" alt="">
+                                        </div>
+                                        <div class="department-card__title">
+                                            <h3>Sales</h3>
+                                        </div>
+                                        <div class="department-card__content">
+                                            <p>Become sales managers and lead generators in Remote Helpers. Your tasks will be to provide strategy control, goal setting and sales performance tracking, the lead search, initial contact with the client; preparation
+                                                of trade offers; managing negotiations/correspondence; re-attracting customers to cooperation.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="https://rh-s.com/media/">
+                                    <div class="department-card">
+                                        <div class="department-card__image">
+                                            <img src="assets/card_media.png" alt="">
+                                        </div>
+                                        <div class="department-card__title">
+                                            <h3>Media</h3>
+                                        </div>
+                                        <div class="department-card__content">
+                                            <p>You are good at promoting the brand? The requirements of media buyer and affiliate manager in our company will be creating marketing campaigns, searching for profitable cooperation for the projects, looking
+                                                for advertising space, cost and ROI monitoring, and optimization of plans and budgets
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="https://rh-s.com/virtual-assistance/">
+                                    <div class="department-card">
+                                        <div class="department-card__image">
+                                            <img src="assets/card_virtual-assistance.png" alt="">
+                                        </div>
+                                        <div class="department-card__title">
+                                            <h3>Virtual assistance</h3>
+                                        </div>
+                                        <div class="department-card__content">
+                                            <p>Have experience in virtual assistance? Start working as a remote personal assistant, customer support, and accountant in our company. You will search and communicate with customers via email or chat, update
+                                                the database with information, audit, make a financial analysis of results and statements, control the execution of tasks and documentation processing.</p>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
                 </div>
 
             </div>
@@ -173,15 +331,16 @@
                 <h2 class="section-heading">How it works</h2>
 
                 <div class="square-container">
-                    <div class="double-wrapper">
-                        <div class="fifty-container">
+                    <div class="double-wrapper dw-adaptive">
+                        <div class="fifty-container dw-adaptive__fc1">
                             <div class="little-squared">
                                 <div class="little-squared__number">
                                     <h2 class="num">1</h2>
                                 </div>
                                 <div class="little-squared__content">
                                     <h4>Fill out the contact form</h4>
-                                    <p>Leave the contact information, and our managers will respond to you immediately</p>
+                                    <p>Leave the contact information, and our managers will respond to you immediately
+                                    </p>
                                 </div>
                             </div>
 
@@ -201,12 +360,13 @@
                                 </div>
                                 <div class="little-squared__content">
                                     <h4>Become a part of the team</h4>
-                                    <p>After all the steps, we will discuss the details, and soon you'll get your position</p>
+                                    <p>After all the steps, we will discuss the details, and soon you'll get your position
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="fifty-container">
+                        <div class="fifty-container dw-adaptive__fc2">
                             <img src="assets/Image.png" alt="">
                             <button class="btn-arrow">Get Started<span class="btn-span-arrow"> </span></button>
                         </div>
@@ -220,9 +380,9 @@
 
         <section id="benefits-sec">
             <div class="page-width">
-                <div class="double-wrapper">
+                <div class="double-wrapper benefits-dw-adaptive">
 
-                    <div class="nonfifty-container">
+                    <div class="nonfifty-container benefits-dw-adaptive__nc1">
                         <div class="double-wrapper">
                             <div class="half-container" id="hc-1">
 
@@ -268,8 +428,8 @@
                         </div>
                     </div>
 
-                    <div class="nonfifty-container">
-                        <h2 class="benefits-heading">Benefits of cooperation with us</h2>
+                    <div class="nonfifty-container benefits-dw-adaptive__nc2">
+                        <h2 id="benefits-link" class="benefits-heading">Benefits of cooperation with us</h2>
                         <p>We offer <b>remote jobs</b> on a full-time basis for people from different countries. Cooperating with us, you’ll get a stable job, a friendly team, permanent learning, and the possibility to <b>work on international projects!</b>
                         </p>
                         <ul class="benefits-list">
@@ -287,43 +447,45 @@
 
         <section id="join">
             <div class="page-width">
-                <h2 class="section-heading">Fill out the form to join us!</h2>
-                <div class="double-wrapper">
+                <h2 id="join-link" class="section-heading">Fill out the form to join us!</h2>
+                <div class="double-wrapper adaptive-join-dw">
 
-                    <div class="fifty-container">
+                    <div class="nonfifty-container adaptive-join-nc1">
                         <div class="form-wrapper">
                             <p>
                                 Fill out the form and our agent will contact you</p>
                             <form id="form-one">
+
                                 <div>
+                                    <div class="close-select">X</div>
                                     <label for="name">Name and last name*</label>
-                                    <input type="text" id="name" name="name">
+                                    <input type="text" id="name" name="name" placeholder="Your full name">
                                 </div>
                                 <div>
                                     <label for="email">E-mail*</label>
-                                    <input type="text" id="email" name="email">
+                                    <input type="text" id="email" name="email" placeholder="Your E-mail">
                                 </div>
                                 <div>
                                     <label for="phone">Phone number</label>
-                                    <input type="text" id="phone" name="phone">
+                                    <input type="text" id="phone" name="phone" placeholder="Your phone number">
                                 </div>
                                 <div>
                                     <label for="department-selector">Choose where you’d like to work:</label>
                                     <select id="department-selector" name="department-selector">
-                                <option>Design</option>
-                                <option>Development</option>
-                                <option>Marketing</option>
-                                <option>Sales</option>
-                                <option>Media</option>
-                                <option>Virtual Assistance</option>
-                              </select>
+                                        <option>Design</option>
+                                        <option>Development</option>
+                                        <option>Marketing</option>
+                                        <option>Sales</option>
+                                        <option>Media</option>
+                                        <option>Virtual Assistance</option>
+                                    </select>
                                 </div>
                             </form>
                         </div>
                     </div>
 
-                    <div class="fifty-container">
-                        <img src="/assets/undraw_fill_form_re_cwyf 1.png" alt="">
+                    <div class="nonfifty-container adaptive-join-nc2">
+                        <img class="form-deco" src="/assets/undraw_fill_form_re_cwyf 1.png" alt="">
                         <button id="send-form-1" class="btn-arrow">Send an application</button>
                     </div>
                 </div>
@@ -331,10 +493,247 @@
 
             </div>
         </section>
+
+        <section id="review-sec">
+            <div class="page-width">
+                <h2 class="section-heading">Reviews</h2>
+                <h3 class="section-subheading">Impressions about working in our company</h3>
+                <div class="review-cards-wrapper desktop">
+
+                    <div class="review-card">
+                        <div class="review-card__image">
+                            <img src="/assets/Ellipse.png" alt="">
+                        </div>
+                        <div class="review-card__info">
+                            <h4>Timur</h4>
+                            <h6>SEO specialist</h6>
+                        </div>
+                        <div class="review-card__description">
+                            <p>Nice atmosphere, friendly and responsive team you quickly get used to, and you feel like home after a week working here. An understanding boss with whom you can discuss any problem. They will listen to you and always tell you
+                                a way out of different situations. All those things give you confidence and the desire to move forward.
+                            </p>
+                        </div>
+                        <div class="review-card__rating">
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-card__image">
+                            <img src="/assets/Ellipse2.png" alt="">
+                        </div>
+                        <div class="review-card__info">
+                            <h4>Eliar</h4>
+                            <h6>Project manager</h6>
+                        </div>
+                        <div class="review-card__description">
+                            <p>My work at Remote Helpers brought me plenty of positive emotions and experience. A friendly-minded, young team of designers, developers, marketers, etc., is always ready to help, regardless of the situation. I'm sure that this
+                                team and company are necessary if you want rapid professional and personal growth.
+                            </p>
+                        </div>
+                        <div class="review-card__rating">
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-card__image">
+                            <img src="/assets/Ellipse3.png" alt="">
+                        </div>
+                        <div class="review-card__info">
+                            <h4>Tatyana</h4>
+                            <h6>Copywriter</h6>
+                        </div>
+                        <div class="review-card__description">
+                            <p>Working at Remote Helpers significantly improved my foreign language skills. The company gives me a friendly staff, comfortable remote work environment, an opportunity for self-improvement, proper reward, good mood, and desire
+                                to develop.
+                            </p>
+                        </div>
+                        <div class="review-card__rating">
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                            <span class="rating-star"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="review-cards-mobile">
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-2">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="review-card rc-mobile">
+                                    <div class="review-card__image">
+                                        <img src="/assets/Ellipse.png" alt="">
+                                    </div>
+                                    <div class="review-card__info">
+                                        <h4>Timur</h4>
+                                        <h6>SEO specialist</h6>
+                                    </div>
+                                    <div class="review-card__description">
+                                        <p>Nice atmosphere, friendly and responsive team you quickly get used to, and you feel like home after a week working here. An understanding boss with whom you can discuss any problem. They will listen to you and always
+                                            tell you a way out of different situations. All those things give you confidence and the desire to move forward.
+                                        </p>
+                                    </div>
+                                    <div class="review-card__rating">
+                                        <span class="rating-star"></span>
+                                        <span class="rating-star"></span>
+                                        <span class="rating-star"></span>
+                                        <span class="rating-star"></span>
+                                        <span class="rating-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="review-card rc-mobile">
+                                    <div class="review-card__image">
+                                        <img src="/assets/Ellipse2.png" alt="">
+                                    </div>
+                                    <div class="review-card__info">
+                                        <h4>Eliar</h4>
+                                        <h6>Project manager</h6>
+                                    </div>
+                                    <div class="review-card__description">
+                                        <p>My work at Remote Helpers brought me plenty of positive emotions and experience. A friendly-minded, young team of designers, developers, marketers, etc., is always ready to help, regardless of the situation. I'm
+                                            sure that this team and company are necessary if you want rapid professional and personal growth.
+                                        </p>
+                                    </div>
+                                    <div class="review-card__rating">
+                                        <span class="rating-star"></span>
+                                        <span class="rating-star"></span>
+                                        <span class="rating-star"></span>
+                                        <span class="rating-star"></span>
+                                        <span class="rating-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="review-card rc-mobile">
+                                    <div class="review-card__image">
+                                        <img src="/assets/Ellipse3.png" alt="">
+                                    </div>
+                                    <div class="review-card__info">
+                                        <h4>Tatyana</h4>
+                                        <h6>Copywriter</h6>
+                                    </div>
+                                    <div class="review-card__description">
+                                        <p>Working at Remote Helpers significantly improved my foreign language skills. The company gives me a friendly staff, comfortable remote work environment, an opportunity for self-improvement, proper reward, good mood,
+                                            and desire to develop.
+                                        </p>
+                                    </div>
+                                    <div class="review-card__rating">
+                                        <span class="rating-star"></span>
+                                        <span class="rating-star"></span>
+                                        <span class="rating-star"></span>
+                                        <span class="rating-star"></span>
+                                        <span class="rating-star"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+
+                <div class="flex"> <button class="show-more-reviews">See more reviews</button>
+                </div>
+            </div>
+        </section>
+
+
+
+
     </main>
+    <footer>
+        <div class="page-width">
+            <div class="footer-top">
+                <div class="footer-top__left">
+                    <p>We offer remote jobs on a full-time basis for people from different countries. Cooperating with us, you’ll get a stable job, a friendly team, permanent learning, and the possibility to work on international projects!</p>
+                </div>
+                <div class="footer-top__right">
+                    <img src="assets/footer-logo.png" alt="">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copiright">
+                    <p>© 2022 Creative Agency</p>
+                </div>
+                <div class="footer-menu">
+                    <nav>
+                        <ul class="navigation flex">
+                            <li><a href="#">Benefits</a></li>
+                            <li><a href="#">Departments</a></li>
+                            <li><a href="#">Join us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-social">
+                    <a href="#">
+                        <div class="social fb"></div>
+                    </a>
+                    <a href="#"></a>
+                    <div class="social insta"></div>
+                    </a>
+                    <a href="#"></a>
+                    <div class="social linkedin"></div>
+                    </a>
+                    <a href="#"></a>
+                    <div class="social twitter"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper('.swiper-1', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+        const swiper2 = new Swiper('.swiper-2', {
             // Optional parameters
             direction: 'horizontal',
             loop: true,
@@ -356,6 +755,8 @@
             },
         });
     </script>
+
+
 </body>
 
 </html>
