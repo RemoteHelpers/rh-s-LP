@@ -1,5 +1,6 @@
 :root {
   --br: 20px;
+  --red: #fc3d3d;
 }
 @media screen and (min-width: 1600px) {
   #first-sec {
@@ -309,9 +310,11 @@
   .full-nav {
     display: none;
   }
+  header .flex {
+    justify-content: space-between;
+  }
   .mobile-menu {
     display: block;
-    width: 100%;
     text-align: right;
     padding-top: 44px;
   }
@@ -340,12 +343,52 @@
   .menu-btn {
     float: right;
   }
+  .menu-icon {
+    position: relative;
+    width: 20px;
+    height: 5px;
+    background-color: var(--red);
+  }
+  .menu-icon.active {
+    background-color: transparent;
+  }
+  .menu-icon::before {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    background-color: var(--red);
+  }
+  .menu-icon.active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    background-color: var(--red);
+  }
+  .menu-icon::after {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    background-color: var(--red);
+  }
+  .menu-icon.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
   .mobile-menu-container {
     display: none;
     position: absolute;
     width: 95%;
     left: 0;
-    top: 0;
+    top: 10%;
     padding-left: 5%;
     z-index: 999;
     height: 1px;
